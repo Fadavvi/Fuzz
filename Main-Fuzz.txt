@@ -555,6 +555,32 @@ $ENV{'HOME'}
 File:///
 ../../../../../../../../../../../etc/passwd%00
 ../../../../../../../../../../../etc/hosts
+%ALLUSERSPROFILE%
+%APPDATA%
+%COMPUTERNAME%
+%COMSPEC%
+%HOMEDRIVE%
+%HOMEPATH%
+%PATH%
+%PATHEXT%
+%PROGRAMFILES%
+%PROMPT%
+%SYSTEMDRIVE%
+%SYSTEMROOT%
+%TEMP%
+%TMP%
+%USERNAME%
+%USERPROFILE%
+%WINDIR%
+%DATE%
+%TIME%
+%CD%
+%ERRORLEVEL%
+%RANDOM%
+%CommonProgramFiles%
+%LOCALAPPDATA%
+%ProgramData%
+%Public%
 () { 0; }; touch /tmp/blns.shellshock1.fail;
 () { _; } >_[$($())] { touch /tmp/blns.shellshock2.fail; }
 <<< %s(un='%s') = %u
